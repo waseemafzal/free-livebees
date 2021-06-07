@@ -1,0 +1,46 @@
+/*
+  Icon Font: custom
+*/
+
+@font-face {
+  font-family: "custom";
+  src: url("./custom_74f1713e9735f8e51847bae2c6367e85.eot");
+  src: url("./custom_74f1713e9735f8e51847bae2c6367e85.eot?#iefix") format("embedded-opentype"),
+       url("./custom_74f1713e9735f8e51847bae2c6367e85.woff2") format("woff2"),
+       url("./custom_74f1713e9735f8e51847bae2c6367e85.woff") format("woff"),
+       url("./custom_74f1713e9735f8e51847bae2c6367e85.ttf") format("truetype"),
+       url("./custom_74f1713e9735f8e51847bae2c6367e85.svg#custom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "custom";
+    src: url("./custom_74f1713e9735f8e51847bae2c6367e85.svg#custom") format("svg");
+  }
+}
+
+[data-custom-icon]:before { content: attr(data-icon); }
+
+[data-custom-icon]:before,
+.icon-perso-27358271:before, .icon-generic-27358271:before,
+.icon-perso-27358286:before, .icon-generic-27358286:before,
+.icon-perso-31786652:before, .icon-generic-31786652:before {
+  display: inline-block;
+  font-family: "custom";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icon-perso-27358271:before, .icon-generic-27358271:before { content: "\f100"; }
+.icon-perso-27358286:before, .icon-generic-27358286:before { content: "\f101"; }
+.icon-perso-31786652:before, .icon-generic-31786652:before { content: "\f102"; }

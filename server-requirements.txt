@@ -1,0 +1,31 @@
+Hi Waseem,
+for the next App, what I would wish if we leave Goodbarber frame:
+- to be secure and automatically upgraded (as under Goodbarber)
+- to be able to add regular pages/forms in the graphism we want
+- to get support
+- to act as a PWA (with Icon on the dashboard on Android/Ios)
+- to have notifications as for an App
+- to be functional Offline with cache and sync
+
+So, to go fast and be sure itwill be possible: I suggest to have a POC with very few basic features:
+
+ - an authentification process whith email/password for 2 kinds of users User (name email adress)  and Pro (name email adress and radius for instance)
+- a report page just with immediate geolocalisation +  one picture + state of nest Active / Inactive
+- a notification on the phone/desktop each time a Report is done
+- a Search page just with radius + state of Nest
+- a way in back office to add an information page
+- a way in back office to add a field in Report/Search
+
+Pease use the current graphism.
+
+We wish to use the more regular solutions API when it exist to get native extra support.
+
+Please use the more tools you can from PlanetHoster and use wildthebees.org domain name.
+
+From
+https://wildthebees.goodbarber.app/manage
+dev@wild-bees.org
+
+Target
+Wild-bees.org
+Id wildhtwv / 4HFwNkntYMv1hW
