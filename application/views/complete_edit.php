@@ -404,12 +404,31 @@
 
 
 
+#navbar ul li a i {
+    height: 25px;
+}
 
-
-
+#mainheading{color: #000; font-family: Lato; font-weight: normal; font-style: normal; font-variant: normal; font-size: 35px;}
+.texte p {
+    text-align: justify;
+}
     @media (max-width: 768px) {
+		.file-field span {
+    cursor: pointer;
+    font-size: smaller;
+}
+.container{
+    width: auto!important;
+}
+		#mainheading{ font-size: 22px;}
 
-
+#navbar ul li {
+    width: 100%;
+}
+#language2 {
+   
+    margin: 8px 45% !important;
+}
 
       div.form_container>div.main_form {
 
@@ -1353,8 +1372,7 @@
         <div class="texte col s12 m6 texte">
 
 
-
-          <h1 _ngcontent-vcu-c387="" style="color: #000; font-family: Lato; font-weight: normal; font-style: normal; font-variant: normal; font-size: 35px;">
+          <h1 id="mainheading">
 
 
 
@@ -1363,10 +1381,6 @@
 
 
           </h1>
-
-
-
-          <br>
 
 
 
