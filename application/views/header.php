@@ -30,7 +30,14 @@
 
 
   <base href="<?php echo base_url() ?>">
+  <!-- ***********************    08/06/2021       ******************************* -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" /> -->
 
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css" integrity="sha512-rSWTr6dChYCbhpHaT1hg2tf4re2jUxBWTuZbujxKg96+T87KQJriMzBzW5aqcb8jmzBhhNSx4XYGA6/Y+ok1vQ==" crossorigin="anonymous" /> -->
+
+
+  <!-- ******************************************************************** -->
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -70,9 +77,6 @@
 
 
 
-
-
-
   <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css">
 
 
@@ -86,6 +90,10 @@
 
 
   <style>
+    i.my_icon {
+      height: 30px;
+    }
+
     #togglePassword {
 
       right: 18px;
@@ -608,7 +616,7 @@
 
 
         <li class="<?= $homeActive ?>"><a href="<?php echo base_url() . 'map'; ?>"> <i class="glyphicon glyphicon-search"></i> Rechercher </a></li>
-        <li class="<?= getActive('complete') ?>"><a href="<?php echo base_url() . 'complete' . $url ?>"><i class="glyphicon glyphicon-list-alt"></i><?= lang("reporting"); ?> </a></li>
+        <li class="<?= getActive('complete') ?>"><a href="<?php echo base_url() . 'complete' . $url ?>"><i class="my_icon glyphicon glyphicon-list-alt"></i><?= lang("reporting"); ?> </a></li>
 
 
 
@@ -738,9 +746,9 @@
 
 
 
-          <li class="<?= $homeActive ?> xs-hidden"><a href="<?php echo base_url() . 'map' ?>"> <i class="glyphicon glyphicon-search"></i><?= lang('search') ?> </a></li>
+          <li class="<?= $homeActive ?> xs-hidden"><a href="<?php echo base_url() . 'map' ?>"> <i class="my_icon glyphicon glyphicon-search"></i><?= lang('search') ?> </a></li>
 
-          <li class="<?= getActive('complete') ?> xs-hidden"><a href="<?php echo base_url() . 'complete' . $url ?>"><i class="glyphicon glyphicon-list-alt"></i><?= lang("reporting"); ?> </a></li>
+          <li class="<?= getActive('complete') ?> xs-hidden"><a href="<?php echo base_url() . 'complete' . $url ?>"><i class="my_icon glyphicon glyphicon-list-alt"></i><?= lang("reporting"); ?> </a></li>
 
 
 
@@ -943,6 +951,14 @@
 
 
   </div>
+  <!-- *****************08/06/2021***************** -->
+
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+  </script> -->
+
+
+  <!-- **************************************************-->
 
 
 
