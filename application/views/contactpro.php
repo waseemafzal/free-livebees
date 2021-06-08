@@ -219,7 +219,9 @@ include_once "header.php";
 
                                         <div class="btn-group">
 
-                                            <button type="button" id="btnContact_<?php echo base64_encode($row->id) ?>" onClick="contactWithPro('<?php echo base64_encode($row->id) ?>','<?php echo $row->id ?>')" class="btn btn-primary">
+
+
+                                            <button type="button" id="btnContact_<?php echo base64_encode($row->id) ?>" onClick="contactWithPro('<?php echo base64_encode($row->id) ?>','<?php echo $row->id ?>','<?php echo $this->session->userdata('user_id') ?>')" class="btn btn-primary">
 
                                                 <?php echo lang('contact_pro');  ?> <span id="loader_spin_<?php echo base64_encode($row->id) ?>;?>" class="hidden"><i class="fa fa-refresh fa-spin" style="font-size:24px"></i></span></button>
 
@@ -230,6 +232,7 @@ include_once "header.php";
                                         </div>
 
                                     </div>
+
 
                                 </div>
 
@@ -308,7 +311,11 @@ include_once "header.php";
 
     }
 
-    function contactWithPro(pro, val) {
+    function contactWithPro(pro = '', val = '', sender_id = '') {
+        // sender_id->who will send the message
+        // val ->who will recieve the message from the sender
+
+
 
 
 
@@ -333,6 +340,8 @@ include_once "header.php";
         formData.append('pro_id', pro);
 
         formData.append('message', message);
+        formData.append('rec_id', val);
+        formData.append('sender_id', sender_id);
 
         // ajax start
 
@@ -340,7 +349,7 @@ include_once "header.php";
 
             type: "POST",
 
-            url: "<?php echo base_url() . 'user/contactWithPro'; ?>",
+            url: "<?php echo base_url() . 'chat/contactWithPro'; ?>",
 
             data: formData,
 

@@ -63,7 +63,28 @@ get_title($id,$tableName)
 
 
 */
+function get_notifications()
+{
+	$user = $_SESSION['user_id'];
+	$ci = &get_instance();
+	$result = $ci->db->query("select * from conversations where receiver_id=$user or owner_id=$user")->result_array();
+	$count = 0;
+	foreach ($result as $val) {
+		$sender_user = '';
 
+		if (
+			$val['owner_id'] == $user
+		) {
+			$sender_user = $val['receiver_id'];
+		} else {
+			$sender_user = $val['owner_id'];
+		}
+
+		$result = $ci->db->get_where('messages', array('conversation_id' => $val['conversation_id'], 'user_id' => $sender_user, 'read' => 0))->result_array();
+		$count += count($result);
+	}
+	return $count;
+}
 function lang($tkey)
 
 {
