@@ -2,11 +2,15 @@
 include_once"header.php";
 
 ?>
+<style>
+.post-single img{ max-width:100% !important;
+}
+</style>
         <section id="sub-header">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 text-center">
-                    <h1>Le Projects
+                    <h1>Le Projet
 </h1>
 </div>
             </div><!-- End row -->

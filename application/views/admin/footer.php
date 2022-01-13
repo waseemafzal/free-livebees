@@ -267,7 +267,22 @@ $('.timepicker').timepicker({
 	
 	
 	$(".fancybox").fancybox();
+	
 </script>
+<!------------------------>
+
+
+<script src="bower_components/ckeditor/ckeditor.js"></script>
+<script type="text/javascript">
+  CKEDITOR.replace('editor1', {
+    height: 300,
+    filebrowserUploadUrl: "<?= base_url() ?>upload.php"
+  });
+</script>
+
+
+<!------------------------>
+
 </body>
 </html>
 
