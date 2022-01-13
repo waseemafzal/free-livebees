@@ -54,11 +54,6 @@
   </title>
 
 
-
-
-
-
-
   <base href="<?php echo base_url() ?>">
 
   <!-- ***********************    08/06/2021       ******************************* -->
@@ -94,9 +89,7 @@
 
 
 
-
-
-
+  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css">
 
 
 
@@ -106,7 +99,6 @@
 
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
 
 
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -1230,6 +1222,7 @@
 
 
 
+  <li class="<?= getActive('complete') ?>"><a href="<?php echo base_url() . 'complete' . $url ?>"><i class="my_icon glyphicon glyphicon-list-alt"></i><?= lang("reporting"); ?> </a></li>
 
 
       <div class="navbar-header">
@@ -1601,6 +1594,7 @@ if(is_file($avatar)){
                 <li><a href="auth/userlogout" data-toggle="tooltip" title="logout"><?= lang("signout"); ?></a></li>
 
 
+          <li class="<?= getActive('complete') ?> xs-hidden"><a href="<?php echo base_url() . 'complete' . $url ?>"><i class="my_icon glyphicon glyphicon-list-alt"></i><?= lang("reporting"); ?> </a></li>
 
               </ul>
 
@@ -1763,6 +1757,14 @@ if(is_file($avatar)){
 
 
   </div>
+  <!-- *****************08/06/2021***************** -->
+
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+  </script> -->
+
+
+  <!-- **************************************************-->
 
   <!-- *****************08/06/2021***************** -->
 
