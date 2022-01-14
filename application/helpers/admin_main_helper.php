@@ -88,7 +88,7 @@ function get_notifications()
 function lang($tkey)
 
 {
-
+$text=$tkey;
 	$CI = &get_instance();
 
 	$lang = get_session('lang');
@@ -99,8 +99,10 @@ function lang($tkey)
 	}
 
 	$row = $CI->db->where('tkey', $tkey)->get('trans_language')->result();
-
-	return $row[0]->$lang;
+if($row[0]->$lang!=''){
+	$text =$row[0]->$lang;
+	}
+	return $text;
 }
 
 function lang1($french, $a = '')

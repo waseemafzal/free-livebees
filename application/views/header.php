@@ -1220,11 +1220,6 @@
 
 
 
-
-
-  <li class="<?= getActive('complete') ?>"><a href="<?php echo base_url() . 'complete' . $url ?>"><i class="my_icon glyphicon glyphicon-list-alt"></i><?= lang("reporting"); ?> </a></li>
-
-
       <div class="navbar-header">
 
 
@@ -1353,7 +1348,7 @@
 
  <li class="<?= getActive('leproject') ?> xs-hidden"><a href="<?php echo base_url() . 'leproject' . $url ?>"><i class="my_icon glyphicon glyphicon-list-alt"></i><?= lang("leproject"); ?> </a></li>
 
- <li class="<?= getActive('portfolio') ?> xs-hidden"><a href="<?php echo base_url() . 'portfolio' . $url ?>"><i class="my_icon fa fa-gallery"></i><?= lang("portfolio"); ?> </a></li>
+ <li class="<?= getActive('portfolio') ?> xs-hidden"><a href="<?php echo base_url() . 'portfolio' . $url ?>"><i class="my_icon glyphicon glyphicon-map-marker"></i><?= lang("Portfolio"); ?> </a></li>
 
 
 
